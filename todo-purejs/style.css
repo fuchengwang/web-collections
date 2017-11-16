@@ -1,0 +1,28 @@
+/**
+ *  全局修改
+ */
+body {
+    color: #4d4d4d;
+    background: #f5f5f5;
+    margin: 0px;
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+
+}
+
+/**
+ * 大标题
+ */
+.header {
+    color: rgba(175, 47, 47, 0.15);
+    font-size: 100px;
+    font-weight: 100;
+    margin: 50px 0;
+}
+
+/* 页脚 */
+.footer {
+    color: #bfbfbf;
+    font-size: 10px;
+}

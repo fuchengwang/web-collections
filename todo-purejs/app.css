@@ -1,0 +1,174 @@
+
+.app {
+    font-size: 24px;
+    background: #fff;
+    width: 550px;
+    margin: 50px auto;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+}
+
+/**
+ * todo输入框
+ */
+.todo-input {
+    position: relative;
+    background: #FEFEFE;
+    box-shadow: inset 0 -2px 1px rgba(0,0,0,0.03);
+}
+
+.todo-input .toggle-all {
+    position: absolute;
+    left: 15px;
+}
+.toggle-all input[type=checkbox] {
+    vertical-align: middle;
+}
+
+.input-container {
+    border-bottom: 1px solid #ededed;
+    padding: 15px 15px 15px 60px;
+}
+.todo-input #new-todo{
+    font-weight: inherit;
+    outline: none;
+    border: none;
+    width: 100%;
+    font-size: 24px;
+    color: inherit;
+}
+#new-todo::-webkit-input-placeholder {
+    font-style: italic;
+	font-weight: 300;
+	color: #e6e6e6;
+}
+#new-todo:-moz-input-placeholder {
+    font-style: italic;
+	font-weight: 300;
+	color: #e6e6e6;
+
+}
+#new-todo::-moz-placeholder {
+    font-style: italic;
+	font-weight: 300;
+	color: #e6e6e6;
+
+}
+#new-todo:-ms-input-placeholder {
+    font-style: italic;
+	font-weight: 300;
+	color: #e6e6e6;
+
+}
+
+
+/**
+ * todo 列表
+ */
+ul.todo-list { /* ul既有默认margin又有默认padding, 特别烦人。。*/
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: left;
+    /* padding: 15px 50px 15px 15px; */
+    /* TODO: 断行测试 */
+}
+
+
+li.todo-list-item {
+    border-bottom: 1px solid #ededed;
+    position: relative;
+    padding: 15px;
+    cursor: default;
+    font-size: 0;  /** 子元素垂直居中对齐， 清除高度 */
+}
+
+li.todo-list-item:hover .destroy{
+    display: block;
+}
+
+.todo-list-item button.destroy {
+    /* 高度为什么等于包含块的高度？ */
+    transition: all 200ms linear;
+    position: absolute;
+    right: 15px;
+    margin: 10px 15px;
+    padding: 0px 15px;
+    top: 0;
+    bottom: 0;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    background-color: transparent;
+    color:#cc9a9a;
+    display: none;
+    cursor: pointer;
+}
+
+.todo-list-item button.destroy:hover {
+    color: #af5b5e;
+}
+
+
+
+.todo-list-item span {
+    vertical-align: middle;
+    font-size: 24px;
+    display: inline-block;
+    /* 为了水平排列， 需要设置最大绝对宽度。 但更好的做法是让左边button绝对定位， 这样可以自适应宽度 */
+    max-width: 460px;
+    /* box-shadow: 1px 1px black inset, -1px -1px black inset; */
+}
+
+
+.todo-list-item .toggle {
+    vertical-align: middle;
+    display: inline-block;
+    /* margin-right: 20px; */
+    cursor: pointer;
+    border: 1px solid #eeeeee;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin-right: 20px;
+    /* box-shadow: 1px 1px black inset, -1px -1px black inset; */
+    font-size: 20px;
+
+}
+
+.todo-list-item .toggle  input{
+    display: none;
+}
+
+
+
+/**
+ *  底部状态栏
+ */
+
+.todo-statusbar {
+    position: relative;
+    font-size: 14px;
+    color: rgb(119, 119, 119);
+    padding: 10px 15px;
+}
+
+.todo-statusbar .counter {
+    position: absolute;
+    left: 15px;;
+    padding: 3px;
+}
+.todo-statusbar .buttons a{
+    border: 1px solid transparent;
+    display: inline-block;
+    padding: 3px 7px;
+    text-decoration: none;
+    color: rgb(119, 119, 119);
+    border-radius: 3px;
+}
+.todo-statusbar .buttons a.selected {
+    border-color:rgba(175, 47, 47, 0.2);
+}
+.todo-statusbar .buttons a:hover {
+    border-color: rgba(175, 47, 47, 0.1);
+}

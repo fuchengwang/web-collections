@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./app.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1 class="header">Todos</h1>
+  <div class="app">
+    <div class="todo-input">
+
+      <div class="input-container">
+        <div class="toggle-all">
+          <input type="checkbox" />
+        </div>
+        <input id="new-todo" type="text" placeholder="请记录下你要做的事情">
+      </div>
+    </div>
+
+    <ul class="todo-list">
+      <li class="todo-list-item">
+        <label class="toggle" for="">
+        </label>
+        <span>这是一个任务这是一个任务这是一个任务这是</span>
+        <button class="destroy">X</button>
+      </li>
+    </ul>
+
+    <div class="todo-statusbar">
+      <div class="counter">
+        <!-- absolute -->
+        <span>
+          <strong>5</strong> item left</span>
+      </div>
+      <div class="buttons">
+        <a href="#/all" class="selected">All</a>
+        <a href="#/active">Actived</a>
+        <a href="#/completed">Completed</a>
+      </div>
+
+
+    </div>
+
+
+
+  </div>
+  <div class="footer">
+    <p class="tip">Double-click to edit a todo</p>
+    <p>Created by Wynfrith</p>
+  </div>
+</body>
+
+</html>
