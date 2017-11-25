@@ -118,14 +118,15 @@ i {
 
 .header-content .search>input {
     outline: none;
-    background-color: #F1F1F1;
+    background-color: #f1f1f187;
     border: 1px solid #FFDADA;
+    color:#444;
     width: 320px;
     height: 40px;
     vertical-align: middle;
     padding: 0 20px;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 15px;
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
 }
@@ -215,7 +216,7 @@ i {
 }
 
 .attached-nav-box a:hover,
-.attached-nav-box a:actived {
+.attached-nav-box a.actived {
     color: #fff;
     background-color: #57b958;
 }
@@ -266,7 +267,7 @@ i {
 
 
 /****************************************
- **********  main-page article **********
+ **********  首页正文 **********
 ****************************************/
 
 .main-page {
@@ -362,6 +363,12 @@ ul.main-page-sort-nav a:hover {
     color: #fff;
     box-shadow: 0px 1px 4px 0 rgba(87, 185, 88, .27);
     font-size: 18px;
+}
+.items-box .box-right a:hover {
+    background-color: #4ec24e;
+}
+.items-box .box-right a:active {
+    background-color: #57b357;
 }
 
 .items-box .box-main {
@@ -528,6 +535,7 @@ ul.main-page-sort-nav a:hover {
 }
 
 .baicai-detail .maylike-item .pic-box {
+    display: block;
     position: relative;
     transform: rotateX(0);
 }
